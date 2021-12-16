@@ -22,6 +22,13 @@ nav .left-side {
   display: flex;
   align-items: center;
 }
+
+nav .left-side img {
+  padding-top: 25px;
+  width: 100px;
+  height: 150px;
+}
+
 nav .left-side li {
   display: inline;
 }
@@ -33,7 +40,7 @@ nav .left-side li a {
 }
 
 nav .left-side li a.active {
-  color: orangered;
+  color: blue;
   font-weight: 700;
 }
 
@@ -47,7 +54,7 @@ nav .right-side {
 
 nav .right-side a {
   text-decoration: none;
-  background-color: orangered;
+  background-color: blue;
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
@@ -67,7 +74,7 @@ nav .right-side a {
 }
 
 .section .left{
-  flex: 40%;
+  flex: 30%;
 }
 
 .section .left div {
@@ -98,7 +105,7 @@ nav .right-side a {
 }
 
 .section .right {
-  flex: 60%;
+  flex: 70%;
   padding-left: 30px;
 }
 
@@ -161,7 +168,7 @@ nav .right-side a {
 .form-contact form button {
   padding: 8px 30px;
   font-size: 17px;
-  background: #ec4d37;
+  background: blueviolet;
   border-radius: 10px;
   border: none;
   color: #fff;
@@ -208,7 +215,6 @@ select {
 }
 
 .blog-form form .input-blog-image-group {
-  width: 100%;
   font-size: 20px;
   font-weight: 400;
   padding: 8px;
@@ -239,7 +245,7 @@ select {
   margin-top: 50px;
   padding: 8px 20px;
   font-size: 17px;
-  background: #ec4d37;
+  background: blueviolet;
   border-radius: 8px;
   border: none;
   color: #fff;
@@ -302,7 +308,7 @@ select {
   padding: 5px 10px;
   border: 0;
   border-radius: 4px;
-  background: #ec4d37;
+  background: blueviolet;
   color: #fff;
 }
 
