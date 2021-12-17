@@ -5,9 +5,12 @@ function addBlog(event) {
 
     let title = document.getElementById('input-blog-title').value
     let content = document.getElementById('input-blog-content').value
-    let image = document.getElementById('input-blog-image').files
+    let image = document.getElementById('input-blog-image')
 
-    image = URL.createObjectURL(image[0])
+    if (!title || !content || image.files.length == 0) {
+        return alert('All data must be filled');
+    }
+    image = URL.createObjectURL(image.files[0])
 
     let blog = {
         title: title,
@@ -18,10 +21,6 @@ function addBlog(event) {
     }
 
     blogs.push(blog)
-    // check if all input form filled
-    if (!title || !content || image.files.length == 0) {
-        return alert('All data must be filled');
-    }
 
     manipulationHTML()
 }
