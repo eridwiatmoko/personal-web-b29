@@ -10,6 +10,12 @@ function submitData() {
     if (name == '' || email == '' || phone == '' || subject == '' || message == '') {
         return alert("All input fields must be not empty")
     }
+
+    //clear input
+    document.getElementById('input-name').value = ''
+    document.getElementById('input-email').value = ''
+    document.getElementById('input-phone').value = ''
+    document.getElementById('input-message').value = ''
     
     //mail to
     const emailReceiver = 'eri@gmail.com';
@@ -17,13 +23,4 @@ function submitData() {
     a.href = `mailto:${emailReceiver}?subject=${subject}&body=Hello my name ${name}, ${subject}, ${message}`;
     a.click();
 
-    //store data to object
-    let dataObject = {
-        name: name,
-        email: email,
-        phoneNumber: phone,
-        subject: subject,
-        message: message,
-    };
-    console.log(dataObject);
 }
