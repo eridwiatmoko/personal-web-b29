@@ -52,7 +52,7 @@ nav .right-side {
 
 nav .right-side a {
   text-decoration: none;
-  background-color: #5de6de;
+  background-color: blue;
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
@@ -167,7 +167,7 @@ select {
 .form-contact form button {
   padding: 8px 30px;
   font-size: 17px;
-  background: #b58ecc;
+  background: #5de6de;
   border-radius: 10px;
   border: none;
   color: #fff;
@@ -245,7 +245,7 @@ select {
   margin-top: 50px;
   padding: 8px 20px;
   font-size: 17px;
-  background: #b58ecc;
+  background: #5de6de;
   border-radius: 8px;
   border: none;
   color: #fff;
@@ -308,7 +308,7 @@ select {
   padding: 5px 10px;
   border: 0;
   border-radius: 4px;
-  background: #b58ecc;
+  background: #5de6de;
   color: #fff;
 }
 
