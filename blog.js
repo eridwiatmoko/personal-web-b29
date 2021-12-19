@@ -24,6 +24,7 @@ function addBlog(event) {
 
   // create blog item and push to blogs array
   let blog = {
+    id: Date.now(),
     title: title,
     content: content,
     image: image,
@@ -61,7 +62,7 @@ function manipulationHTML() {
                                                     <button class="btn-edit">Edit Post</button>
                                                     <button class="btn-post">Post Blog</button>
                                                     <button class="btn-delete" onclick="deletePost(${
-                                                      blogs[i].content
+                                                      blogs[i].id
                                                     })">Delete Blog</button>
                                                 </div>
                                                 <h1>
@@ -88,9 +89,9 @@ function manipulationHTML() {
   }
 }
 
-function deletePost(content) {
+function deletePost(id) {
   for (let i = 0; i < blogs.length; i++) {
-    if (blogs[i].content == content) {
+    if (blogs[i].id == id) {
       if (confirm("Are you sure to delete this post?")) {
         blogs.splice(i, 1);
       }
